@@ -8,9 +8,9 @@ function nameToAttributes(drivers) {
   const names = []
   (drivers.map(function(driver) {
     driver = driver.split(" ")
-    debugger
+    
     names['firstName'] =  driver[0]
-    name['lastname'] =  driver[1]
+    names['lastname'] =  driver[1]
 
   }))
   return names
