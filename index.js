@@ -5,15 +5,20 @@ function lowerCaseDrivers(drivers) {
 }
 
 function nameToAttributes(drivers) {
-  const names = drivers.map(function(driver) {
+  const names = []
+  (drivers.map(function(driver) {
+    driver = driver.split(" ")
+    debugger
+    names['firstName'] =  driver[0]
+    name['lastname'] =  driver[1]
 
-  })
+  }))
+  return names
 }
 
 function attributesToPhrase(drivers) {
   const intro = drivers.map(function(driver) {
-     `${driver[name]} is from ${driver[hometown]}`
+     return `${driver['name']} is from ${driver['hometown']}`
   })
-
   return intro
 }
