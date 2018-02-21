@@ -1,5 +1,30 @@
 # Map Lab
 
+function lowerCaseDrivers(drivers) {
+  return drivers.map(function (driver) {
+    return driver.toLowerCase();
+  });
+}
+
+function nameToAttributes(drivers) {
+  return drivers.map(function (driver) {
+  const firstName = driver.split(" ")[0];
+  const lastName = driver.split(" ")[1];
+
+  return { firstName: firstName, lastName: lastName };
+  //this feels weird though; repeating variable names
+});
+}
+
+function attributesToPhrase(drivers) {
+  return drivers.map(function (driver) {
+    return `${driver.name} is from ${driver.hometown}`;
+    // need backtick marks if doing interpolation
+  });
+}
+
+
+
 ## Overview
 In this lab, we'll use the `map` method to write functions that properly query our data.
 
