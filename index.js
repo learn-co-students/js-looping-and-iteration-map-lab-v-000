@@ -8,10 +8,10 @@ function nameToAttributes(drivers) {
     
     return drivers.map(function (d) {
         const newObj = {};
-        let arr = d.split(" ");
+        const firstName = d.split(" ")[0];
+        const lastName = d.split(" ")[1];
         //split d by space into a new array
         //arr[0] 
-        newObj.firstName = arr[0];
-        newObj.lastName = arr[1]
+        return {}
     });
 }
