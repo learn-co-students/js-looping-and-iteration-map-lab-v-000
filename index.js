@@ -6,14 +6,16 @@ function lowerCaseDrivers(drivers){
     })
 }
 
+
 function nameToAttributes(drivers) {
-    return drivers.map( function(x) { 
-        return Object.assign( {}, {
-            firstName: x.split(" ")[0], lastName: x.split(" ")[1] 
-        })
+    return drivers.map(function(x) { 
+        return Object.assign( {}, { firstName: x.split(" ")[0], lastName: x.split(" ")[1] })
     });
 }
 
-function attributesToPhrase() {
-    return drivers.map( return `${name} is from ${hometown}`)
-    }
+
+function attributesToPhrase(drivers){
+    return drivers.map(function(driver){
+      return `${driver.name} is from ${driver.hometown}`
+    })
+  }
