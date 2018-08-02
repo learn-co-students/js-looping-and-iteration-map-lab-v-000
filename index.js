@@ -8,12 +8,14 @@ function nameToAttributes(list){
     const first = driver.split(' ')[0]
     const last = driver.split(' ')[1]
 
-    return {firstname: first, lastname: last};
+    return {firstName: first, lastName: last};
   });
 }
 
 function attributesToPhrase(list){
-  return list.map(function (driver)
-    return driver[name];
-)
+  return list.map(function (driver){
+    return `${driver.name} is from ${driver.hometown}`;})
 }
+// function attributesToPhrase(list){
+//   list.map(s=> s.name 'is from' s.hometown)
+// }
