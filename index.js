@@ -7,11 +7,13 @@ function lowerCaseDrivers(array){
 
 function nameToAttributes(array){
 return array.map(function(element) { let splitElement = element.split(" ");
-element.firstName = splitElement[0];
-element.lastName = splitElement[1];
-return element})
+let firstName = splitElement[0];
+let lastName = splitElement[1];
+let full = {firstName: firstName, lastName: lastName}
+console.log(full);
+return full})
 }
 
 function attributesToPhrase(array) {
-return array.map(function(element) {return "${element.name} is from ${element.hometown}"})
+return array.map(function(element){return (`${element.name} is from ${element.hometown}`)})
 }
