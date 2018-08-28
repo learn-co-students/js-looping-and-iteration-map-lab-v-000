@@ -3,12 +3,23 @@ function lowerCaseDrivers(data){
   return data.map(x => x.toLowerCase());
 }
 function nameToAttributes(data){
-  const newHash = {};
-  for (const i in data){
-    let name = i.split(" ");
-    
-  }
-  data.map(x => x.split(" ");
+  let newArray = [];
+  data.map(function(fullName){
+    let name = fullName.split(" ");
+    let info = Object.assign({},{firstName: name[0], lastName: name[1]});
+    newArray.push(info);
+    })
+    return newArray;
+}
 
-  return newHash
+function attributesToPhrase(data){
+  let newArray = []
+  data.map(function(person){
+    console.log(person);
+    console.log(person.name);
+    console.log(person.hometown);
+    newArray.push(person.name+' is from '+person.hometown);
+  })
+  console.log(newArray);
+  return newArray;
 }
