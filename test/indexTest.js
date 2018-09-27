@@ -55,6 +55,16 @@ describe('index.js', () => {
 
     it('uses the Array map method', () => {
       let spy = sinon.spy(Array.prototype, 'map');
+
+      const drivers = [
+        'Bobby Smith',
+        'Sammy Watkins',
+        'Sally Jenkins',
+        'Annette Sawyer',
+        'Sarah Hucklebee',
+        'bobby ridge'
+      ];
+
       nameToAttributes(drivers);
       expect(
         spy.calledOnce,
@@ -90,6 +100,15 @@ describe('index.js', () => {
 
     it('uses the Array map method', () => {
       let spy = sinon.spy(Array.prototype, 'map');
+
+      const drivers = [
+        { name: 'Bobby', hometown: 'Pittsburgh' },
+        { name: 'Sammy', hometown: 'New York' },
+        { name: 'Sally', hometown: 'Cleveland' },
+        { name: 'Annette', hometown: 'Los Angeles' },
+        { name: 'Bobby', hometown: 'Tampa Bay' }
+      ];
+
       attributesToPhrase(drivers);
       expect(
         spy.calledOnce,
