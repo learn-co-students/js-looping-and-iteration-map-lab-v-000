@@ -1,8 +1,9 @@
 const sinon = require('sinon');
 
 describe('index.js', () => {
+  const drivers = [];
   describe('lowerCaseDrivers()', () => {
-    const drivers = [];
+    // const drivers = [];
 
     beforeEach(() => {
       drivers.length = 0;
@@ -49,6 +50,7 @@ describe('index.js', () => {
   });
 
   describe('nameToAttributes()', () => {
+    // const drivers = [];
     after(() => {
       Array.prototype.map.restore();
     });
