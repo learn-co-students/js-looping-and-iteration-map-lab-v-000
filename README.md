@@ -10,7 +10,7 @@ members have undergone the change you pass in as an argument.
 
 1.  Use `map` to work with `String`s as well as `Object`s
 2.  Use `map` to perform a set of `String` transformations
-3.  Use `map` transform a collection of `Object`s
+3.  Use `map` to transform a collection of `Object`s
 
 ## Use `map` to work with `String`s as well as `Object`s
 
