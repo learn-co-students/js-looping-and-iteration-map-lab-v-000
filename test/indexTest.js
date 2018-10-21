@@ -1,3 +1,4 @@
+
 const sinon = require('sinon');
 
 describe('index.js', () => {
