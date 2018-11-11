@@ -1,0 +1,24 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 0,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2018-11-10T17:01:15.000Z",
+    "end": "2018-11-10T17:01:16.231Z",
+    "duration": 1231
+  },
+  "tests": [],
+  "pending": [],
+  "failures": [
+    {
+      "title": "uses the Array map method",
+      "fullTitle": "index.js lowerCaseDrivers() uses the Array map method",
+      "duration": 3,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ],
+  "passes": []
+}
