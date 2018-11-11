@@ -10,6 +10,6 @@ const drivers = [
 
 function lowerCaseDrivers(drivers){
   drivers.map(function (driver) {
-    return driver.firstName.toLowerCase(), driver.lastName.toLowerCase();
+    return firstName.toLowerCase(), lastName.toLowerCase();
   })
 }
