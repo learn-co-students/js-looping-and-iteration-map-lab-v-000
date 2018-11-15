@@ -5,15 +5,15 @@
     "passes": 7,
     "pending": 0,
     "failures": 0,
-    "start": "2018-11-15T01:24:32.350Z",
-    "end": "2018-11-15T01:24:33.052Z",
-    "duration": 702
+    "start": "2018-11-15T01:27:05.452Z",
+    "end": "2018-11-15T01:27:06.325Z",
+    "duration": 873
   },
   "tests": [
     {
       "title": "uses the Array map method",
       "fullTitle": "index.js lowerCaseDrivers() uses the Array map method",
-      "duration": 7,
+      "duration": 5,
       "currentRetry": 0,
       "err": {}
     },
@@ -27,14 +27,14 @@
     {
       "title": "does not modify the original array",
       "fullTitle": "index.js lowerCaseDrivers() does not modify the original array",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "uses the Array map method",
       "fullTitle": "index.js nameToAttributes() uses the Array map method",
-      "duration": 0,
+      "duration": 2,
       "currentRetry": 0,
       "err": {}
     },
@@ -48,14 +48,14 @@
     {
       "title": "uses the Array map method",
       "fullTitle": "index.js attributesToPhrase() uses the Array map method",
-      "duration": 0,
+      "duration": 2,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "converts to list saying the name and where each individual is from",
       "fullTitle": "index.js attributesToPhrase() converts to list saying the name and where each individual is from",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     }
@@ -66,7 +66,7 @@
     {
       "title": "uses the Array map method",
       "fullTitle": "index.js lowerCaseDrivers() uses the Array map method",
-      "duration": 7,
+      "duration": 5,
       "currentRetry": 0,
       "err": {}
     },
@@ -80,14 +80,14 @@
     {
       "title": "does not modify the original array",
       "fullTitle": "index.js lowerCaseDrivers() does not modify the original array",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "uses the Array map method",
       "fullTitle": "index.js nameToAttributes() uses the Array map method",
-      "duration": 0,
+      "duration": 2,
       "currentRetry": 0,
       "err": {}
     },
@@ -101,14 +101,14 @@
     {
       "title": "uses the Array map method",
       "fullTitle": "index.js attributesToPhrase() uses the Array map method",
-      "duration": 0,
+      "duration": 2,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "converts to list saying the name and where each individual is from",
       "fullTitle": "index.js attributesToPhrase() converts to list saying the name and where each individual is from",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     }
