@@ -4,17 +4,19 @@ function lowerCaseDrivers(drivers) {
 }
 
 function nameToAttributes(drivers) {
-  const newObj = [];
-  drivers.map(driver => {
-    newObj.push({firstName: driver.split(" ")[0],lastName: driver.split(" ")[1]})
+  return drivers.map(driver => {
+    return {firstName: driver.split(" ")[0],lastName: driver.split(" ")[1]}
   });
-  return newObj;
 }
 
 function attributesToPhrase(drivers) {
-  const newArr = [];
-  drivers.map(driver => {
-    newArr.push(`${driver.name} is from ${driver.hometown}`)
-  });
-  return newArr;
+  return drivers.map(driver => `${driver.name} is from ${driver.hometown}`);
 }
+//
+// function nameToAttributes(drivers) {
+//   const newObj = [];
+//   drivers.map(driver => {
+//     newObj.push({firstName: driver.split(" ")[0],lastName: driver.split(" ")[1]})
+//   });
+//   return newObj;
+// }
