@@ -1,12 +1,13 @@
 // Code your solution in this file.
 function lowerCaseDrivers(driver){
+   const drivers = [];
  const name = drivers.map(function(driver) { return driver.toLowerCase(); });
-  return names;
+  return name;
 }
 
 function nameToAttributes(drivers) {
-  const names = drivers.map(function(driver) { return Object.assign({}, {firstName: driver.split(" ")[0], lastName: driver.split(" ")[1]}); });
-  return names;
+  const name = drivers.map(function(driver) { return Object.assign({}, {firstName: driver.split(" ")[0], lastName: driver.split(" ")[1]}); });
+  return name;
 }
 
 function attributesToPhrase(drivers) {
