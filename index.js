@@ -14,7 +14,7 @@ function lowerCaseDrivers(drivers) {
 function nameToAttributes(drivers) {
 	function toObj (value) {
 		const array = value.split(" ");
-		const obj = [];
+		const obj = {};
 		obj.firstName = array[0];
 		obj.lastName = array[1];
 
@@ -23,4 +23,12 @@ function nameToAttributes(drivers) {
 
 	const newArray = drivers.map(toObj);
 	return newArray;
+}
+
+function attributesToPhrase(drivers) {
+	function toPhrase(value) {
+		return `${value.name} is from ${value.hometown}`;
+	}
+
+	return drivers.map(toPhrase);
 }
