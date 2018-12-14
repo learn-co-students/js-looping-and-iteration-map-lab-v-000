@@ -14,16 +14,17 @@ describe('index.js', () => {
       Array.prototype.map.restore();
     });
 
-    it('uses the Array map method', () => {
+    it('uses the Array map method', (done) => {
       let spy = sinon.spy(Array.prototype, 'map');
       lowerCaseDrivers(drivers);
       expect(
         spy.calledOnce,
         'map was not called in lowerCaseDrivers()'
       ).to.equal(true);
+      done()
     });
 
-    it('returns all drivers lowercased', () => {
+    it('returns all drivers lowercased', (done) => {
       expect(lowerCaseDrivers(drivers)).to.eql([
         'bobby',
         'sammy',
@@ -32,9 +33,10 @@ describe('index.js', () => {
         'sarah',
         'bobby'
       ]);
+      done()
     });
 
-    it('does not modify the original array', () => {
+    it('does not modify the original array', (done) => {
       lowerCaseDrivers(drivers);
 
       expect(drivers).to.eql([
@@ -45,6 +47,7 @@ describe('index.js', () => {
         'Sarah',
         'Bobby'
       ]);
+      done()
     });
   });
 
@@ -53,7 +56,7 @@ describe('index.js', () => {
       Array.prototype.map.restore();
     });
 
-    it('uses the Array map method', () => {
+    it('uses the Array map method', (done) => {
       const drivers = [
         'Bobby Smith',
         'Sammy Watkins',
@@ -68,9 +71,10 @@ describe('index.js', () => {
         spy.calledOnce,
         'map was not called in nameToAttributes()'
       ).to.equal(true);
+      done()
     });
 
-    it('returns list of objects with appropriate first and last names', () => {
+    it('returns list of objects with appropriate first and last names', (done) => {
       const drivers = [
         'Bobby Smith',
         'Sammy Watkins',
@@ -88,6 +92,7 @@ describe('index.js', () => {
         { firstName: 'Sarah', lastName: 'Hucklebee' },
         { firstName: 'bobby', lastName: 'ridge' }
       ]);
+      done()
     });
   });
 
@@ -96,7 +101,7 @@ describe('index.js', () => {
       Array.prototype.map.restore();
     });
 
-    it('uses the Array map method', () => {
+    it('uses the Array map method', (done) => {
       const drivers = [
         'Bobby Smith',
         'Sammy Watkins',
@@ -112,9 +117,10 @@ describe('index.js', () => {
         spy.calledOnce,
         'map was not called in attributesToPhrase()'
       ).to.equal(true);
+      done()
     });
 
-    it('converts to list saying the name and where each individual is from', () => {
+    it('converts to list saying the name and where each individual is from', (done) => {
       const drivers = [
         { name: 'Bobby', hometown: 'Pittsburgh' },
         { name: 'Sammy', hometown: 'New York' },
@@ -130,6 +136,7 @@ describe('index.js', () => {
         'Annette is from Los Angeles',
         'Bobby is from Tampa Bay'
       ]);
+      done()
     });
   });
 });
