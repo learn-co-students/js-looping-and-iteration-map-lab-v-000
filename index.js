@@ -12,7 +12,11 @@ function nameToAttributes (drivers) {
   });
 }
 
-//
-// const newEngineers = map(oldAccounts, function(account) {
-//     return Object.assign({}, account, { accessLevel: 'admin' });
-// });
+function attributesToPhrase (drivers) {
+  return drivers;
+    // return drivers.map(function(driver) {
+    //   const driverFirstName = driver.split(" ")[0]
+    //   const driverLastName = driver.split(" ")[1]
+    // return { firstName: driverFirstName, lastName: driverLastName };
+  });
+}
