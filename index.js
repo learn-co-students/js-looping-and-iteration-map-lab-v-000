@@ -5,11 +5,10 @@ function lowerCaseDrivers (drivers) {
 }
 
 function nameToAttributes (drivers) {
-    var splitName = drivers.split(" ");
-    var firstName = splitName.slice (0, -1).join(" ");
-    var lastName = splitName.pop();
     return drivers.map(function(driver) {
-    return Object.assign({}, driver, { firstName: firstName, lastName: lastName });
+      const driverFirstName = driver.split(" ")[0]
+      const driverLastName = driver.split(" ")[1]
+    return { firstName: driverFirstName, lastName: driverLastName };
   });
 }
 
