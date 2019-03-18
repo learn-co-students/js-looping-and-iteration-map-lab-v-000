@@ -1,0 +1,27 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 0,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2019-03-18T21:32:22.353Z",
+    "end": "2019-03-18T21:32:22.968Z",
+    "duration": 615
+  },
+  "tests": [],
+  "pending": [],
+  "failures": [
+    {
+      "title": "uses the Array map method",
+      "fullTitle": "index.js lowerCaseDrivers() uses the Array map method",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {
+        "stack": "ReferenceError: lowerCaseDrivers is not defined\n    at Context.it (test/indexTest.js:19:7)",
+        "message": "lowerCaseDrivers is not defined"
+      }
+    }
+  ],
+  "passes": []
+}
