@@ -1,3 +1,10 @@
+function map(array, callback) {
+  const newArr = [];
+  
+  for (const element of array) {
+    newArr.push(callback(element));
+  }
+}
 
 function lowerCaseDrivers(array) {
   return array.map(function(element) {return element.toLowerCase()});
@@ -17,15 +24,6 @@ function attributesToPhrase(array) {
         return element.name + " is from " + element.hometown;
     }
   );
-}
-  
-
-function map(array, callback) {
-  const newArr = [];
-  
-  for (const element of array) {
-    newArr.push(callback(element));
-  }
 }
 
 
