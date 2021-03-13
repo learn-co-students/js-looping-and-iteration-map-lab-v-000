@@ -2,7 +2,7 @@
 
 function lowerCaseDrivers(drivers){
     return drivers.map(function(name){
-        // # loop over each element in the driver Array.apply.apply.apply
+        // # loop over each element in the driver Array.apply
         // # turn name to lowercase
 
      return name.toLowerCase()
